@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:  rgb(117, 187, 199);
+    --primary-color-darker: rgb(96, 149, 158);
+    --primary-color-even-darker: rgb(64, 102, 109);
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    margin: 0;
+    padding: 0.625rem 3.125rem 3.125rem 3.125rem;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+header h1 {
+    margin-top: 2.5rem;
+    font-size: 5rem;
+    user-select: none;
+    text-shadow: 0 0.063rem 0.188rem rgba(0, 0, 0, 0.2), 0 0.063rem 0.125rem rgba(0, 0, 0, 0.2);
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    padding: 0.938rem;
+}
+
+#logoImg {
+    padding-right: 0.938rem;
+    padding-bottom: 0.625rem;
+    pointer-events: none;
+    user-select: none;
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+.menu {
+    background-color: var(--primary-color-darker);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0.063rem 0.188rem rgba(0, 0, 0, 0.2), 0 0.063rem 0.125rem rgba(0, 0, 0, 0.2);
+}
+
+.menu a {
+    display: block;
+    padding: 0.938rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.25s;
+    text-align: center;
+    user-select: none;
+}
+
+.menu a:hover {
+    background-color: var(--primary-color-even-darker);
+}
+
+.card {
+    background-color: white;
+    padding: 0.938rem;
+    margin-top: 0.938rem;
+    margin-bottom: 0.938rem;
+    border-radius: 0.313rem;
+    box-shadow: 0 0.063rem 0.188rem rgba(0, 0, 0, 0.2), 0 0.063rem 0.125rem rgba(0, 0, 0, 0.2);
+}
+
+.card h1 {
+    font-size: 3em;
+    color: var(--primary-color-even-darker);
+    text-align: center;
+}
+
+.grid img:hover {
+    opacity: 0.65;
+}
+
+.grid img {
+    margin-top: 0.313rem;
+    height: 9.375rem;
+    user-select: none;
+    border-radius: 50%;
+    border: 0.125rem solid var(--primary-color);
+    cursor: pointer;
+}
+
+.produto {
+    text-align: center;
+    margin: 0.313rem;
+    border-radius: 0.313rem;
+    font-size: 1.25rem;
+    padding: 0.625rem;
+}
+
+.produto br {
+    user-select: none;
+}
+
+.produto p {
+    margin: 0.313rem;
+    color: #555555;
+}
+
+.nomeProduto {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1.563rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    grid-gap: 1.25rem;
+}
+
+.cardEspecial {
+    text-align: center;
+    user-select: none;
+    background-color: var(--primary-color-even-darker);
+    text-shadow: 0 0.063rem 0.188rem rgba(0, 0, 0, 0.2), 0 0.063rem 0.125rem rgba(0, 0, 0, 0.2);
+}
+
+.cardEspecial img {
+    border-radius: 50%;
+    height: 12.5rem;
+    width: 12.5rem;
+}
+
+.cardEspecial h1 {
+    font-size: 3em;
+    color: white;
+}
+
+.cardEspecial p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.social {
+    display: block;
+    margin-top: 0.625rem;
+    align-content: center;
+    text-align: center;
+}
+
+.social img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin: 0.938rem 0.938rem 0.938rem 0.938rem;
+}
+
+.social img, .social p {
+    font-size: 1.5em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#zap {
+    height: 3rem;
+    width: 3.5rem;
+}
