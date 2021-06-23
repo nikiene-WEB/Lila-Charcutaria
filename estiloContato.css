@@ -69,7 +69,6 @@ header h1 {
     border-radius: 0.313rem;
     box-shadow: 0 0.063rem 0.188rem rgba(0, 0, 0, 0.2), 0 0.063rem 0.125rem rgba(0, 0, 0, 0.2);
     text-align: center;
-    user-select: none;
     text-shadow: 0 0.063rem 0.188rem rgba(0, 0, 0, 0.2), 0 0.063rem 0.125rem rgba(0, 0, 0, 0.2);
     color: black;
 }
@@ -88,6 +87,7 @@ header h1 {
     border-radius: 50%;
     height: 12.5rem;
     width: 12.5rem;
+    user-select: none;
 }
 
 .social {
@@ -113,4 +113,20 @@ header h1 {
 #zap {
     height: 3rem;
     width: 3.5rem;
+}
+
+@media screen and (max-width: 800px) {
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #logoImg {
+        width: 4.688rem;
+        height: 4.688rem;
+    }
+
+    body {
+        padding: 5px 25px 25px 25px;
+    }
 }
